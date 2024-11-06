@@ -1,0 +1,51 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../img/pink.png");
+    background-color: #f8f1e7;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Playfair Display", serif;
+}
+
+.b-header {
+    text-align: center;
+    background-image: url("../img/blue.jpg");
+    margin-top: -22px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    opacity: 0.8;
+    color: rgb(207, 250, 250);
+}
+
+.b-div-zadanie {
+    font-size: medium;
+    padding: 10px 10px 10px 10px;
+}
+
+.b-button {
+    background-color: rgb(102, 76, 175, 0.5);
+    border: none;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    margin: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    text-align: center;
+}
+
+.b-button:hover {
+    background-color: rgb(94, 76, 175);
+    color: white;
+}
