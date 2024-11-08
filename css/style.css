@@ -1,10 +1,9 @@
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-image: url("../img/pink.png");
+    background-image: url("../img/fon.webp");
     background-color: #f8f1e7;
     background-repeat: no-repeat;
     background-position: center center;
@@ -16,7 +15,7 @@ body {
 
 .b-header {
     text-align: center;
-    background-image: url("../img/blue.jpg");
+   background-color: #67067a;
     margin-top: -22px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -30,22 +29,77 @@ body {
     padding: 10px 10px 10px 10px;
 }
 
-.b-button {
-    background-color: rgb(102, 76, 175, 0.5);
-    border: none;
-    color: white;
-    padding: 15px 15px 15px 15px;
-    margin: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: all 0.3s ease-out;
+/*Переключення між лабами*/
+.menu-main {
+    list-style: none;
+    margin: 40px 0 5px;
+    padding: 25px 0 5px;
     text-align: center;
 }
 
-.b-button:hover {
-    background-color: rgb(94, 76, 175);
-    color: white;
+.menu-main li {
+    display: inline-block;
+}
+
+.menu-main li:after {
+    content: none;
+}
+
+.menu-main a {
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+
+.menu-main a, .menu-main a:visited {
+    color: #2e2d2e;
+}
+
+.menu-main a:hover {
+    color: #67067a;
+}
+
+.menu-main a:before, .menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: 5px;
+    left: 50%;
+    background: #67067a;
+    transition: .8s;
+}
+
+.menu-main a:hover:before, 
+.menu-main .current:before {
+    left: 0;
+}
+
+.menu-main a:hover:after, 
+.menu-main .current:after {
+    right: 0;
+}
+
+@media (max-width: 550px) {
+    .menu-main {
+        padding-top: 0;
+    }
+    .menu-main li {
+        display: block;
+    }
+    .menu-main li:after {
+        content: none;
+    }
+    .menu-main a {
+        padding: 25px 0 20px;
+        margin: 0 30px;
+    }
 }

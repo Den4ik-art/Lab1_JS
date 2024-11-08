@@ -1,0 +1,118 @@
+h2 {
+    margin-top: 0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.notebook, .notebook-cover {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #ba00e6;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4c0070;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ba00e6;
+    border-radius: 4px;
+    background-color: #f8f0ff;
+    color: #4c0070;
+    padding-right: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="rgba(76, 0, 112, 0.8)"><polygon points="0,0 12,0 6,6"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+input[type="number"] {
+    width: 88%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ba00e6;
+    border-radius: 4px;
+    background-color: #f8f0ff;
+    color: #4c0070;
+    padding-right: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button {
+    background-color: #8000ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6d00b0;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 18px;
+    color: #4c0070;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 16px;
+    color: #4c0070;
+}
+
+.result-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #ba00e6;
+    border-radius: 10px;
+    padding: 15px;
+    width: 20%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.result-container h2 {
+    font-size: 18px;
+    color: #4c0070;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.result-text {
+    font-size: 16px;
+    color: #4c0070;
+    line-height: 1.5;
+    margin: 5px 0;
+}

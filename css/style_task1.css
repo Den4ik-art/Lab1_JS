@@ -1,0 +1,19 @@
+.b-button {
+    background-color: rgb(102, 76, 175, 0.5);
+    border: none;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    margin: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    text-align: center;
+}
+
+.b-button:hover {
+    background-color: rgb(94, 76, 175);
+    color: white;
+}

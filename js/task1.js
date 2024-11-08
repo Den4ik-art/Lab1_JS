@@ -3,7 +3,7 @@ document.getElementById('checkExamsButton').addEventListener('click', checkExams
 var exams = [
     {
         subject: "Математика",
-        examDate: "2024-11-7",
+        examDate: "2024-11-8",
         room: "Аудиторія 101"
     },
     {
@@ -13,7 +13,7 @@ var exams = [
     },
     {
         subject: "Інформатика",
-        examDate: "2024-11-6",
+        examDate: "2024-11-7",
         room: "Аудиторія 202"
     },
     {

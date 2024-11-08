@@ -1,0 +1,122 @@
+.b-button_div, 
+.b-button_table {
+    background-color: rgb(102, 76, 175, 0.5);
+    border: none;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    margin: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    text-align: center;
+}
+
+.b-button_div:hover,
+.b-button_table:hover {
+    background-color: rgb(94, 76, 175);
+    color: white;
+}
+
+.task1_div {
+    font-size: medium;
+    padding: 15px 15px 15px 15px;
+}
+
+.task_1_2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.task1_main, .task2_main {
+    flex: 1;
+}
+
+.task1_main .task1_div,
+.task2_main .task1_div {
+    padding: 10px;
+    background-color: rgb(102, 76, 175, 0.5);
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+.task1_p {
+    margin: 0;
+    padding: 0;
+}
+
+/*Стилі для таблиць*/
+/* Основний стиль таблиці */
+.number-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Заголовки таблиці */
+.number-table th {
+    background-color: #a882cb; /* Глибокий фіолетовий */
+    color: #ffffff; /* Білий текст для контрасту */
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Клітинки таблиці */
+.number-table td {
+    padding: 15px;
+    border: 1px solid #d8bfd8; /* Світлий фіолетовий для меж */
+    text-align: center;
+    color: #5e3b76; /* Темний фіолетовий для тексту */
+    font-size: 16px;
+}
+
+/* Фон для парних рядків */
+.number-table tr:nth-child(even) {
+    background-color: #f3e5f5; /* Світлий фіолетовий */
+}
+
+/* Фон для непарних рядків */
+.number-table tr:nth-child(odd) {
+    background-color: #faf0ff; /* Дуже світлий фіолетовий */
+}
+
+/* Останній рядок для суми */
+.number-table tr#sumRow td {
+    background-color: #d7bde2; /* Помітний фіолетовий відтінок для підсумкового рядка */
+    font-weight: bold;
+    color: #4a235a;
+}
+
+/* Ефект наведення на рядок */
+.number-table tr:hover {
+    background-color: #e1bee7; /* Трохи темніший відтінок при наведенні */
+    transition: background-color 0.3s ease;
+}
+
+/* Кути для таблиці */
+.number-table th:first-child, 
+.number-table td:first-child {
+    border-left: none;
+}
+.number-table th:last-child, 
+.number-table td:last-child {
+    border-right: none;
+}
+
+
+@media (max-width: 768px) {
+    .task_1_2 {
+        flex-direction: column;
+    }
+}
